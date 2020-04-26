@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     let trackLayer = CAShapeLayer()
     let trackLayer_2 = CAShapeLayer()
     let trackLayer_3 = CAShapeLayer()
+    var questionView = UIViewController()
+    var question_views = [QuestionViewController(), Question2ViewController(), Question3ViewController(), QuestionFinalViewController()]
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 244/255, green: 245/255, blue: 250/255, alpha: 1)
@@ -60,7 +62,7 @@ class ViewController: UIViewController {
         view.addSubview(progress_bar)
         let test = UITextField()
         self.view.addSubview(test)
-        let questionView = QuestionViewController()
+        questionView = question_views[circle_ptr]
         self.addChild(questionView)
         questionView.view.frame = CGRect(x: 50, y: 200, width: 300, height: 600)
             questionView.view.layer.shadowColor = UIColor.lightGray.cgColor
@@ -82,18 +84,27 @@ class ViewController: UIViewController {
             make.left.equalTo(view).offset(20)
             make.top.equalTo(view).offset(40)
             make.right.equalTo(view).offset(-300)
+            make.bottom.equalTo(view).offset(-810)
         }
         
         progress_bar.snp.makeConstraints { (make) -> Void in
-            make.left.equalTo(view).offset(40)
-            make.top.equalTo(view).offset(40)
+            make.left.equalTo(view).offset(45)
+            make.top.equalTo(view).offset(20)
             make.right.equalTo(view).offset(-30)
         }
-
+        
+        questionView.view.snp.makeConstraints { (make) -> Void in
+            make.left.equalTo(view).offset(40)
+            make.top.equalTo(view).offset(150)
+            make.bottom.equalTo(view).offset(-110)
+            make.right.equalTo(view).offset(-40)
+        }
+        
         nextButton.snp.makeConstraints { (make) -> Void in
-            make.left.equalTo(view).offset(50)
+            make.left.equalTo(view).offset(200)
+            make.top.equalTo(view).offset(800)
             make.bottom.equalTo(view).offset(-50)
-            make.right.equalTo(view).offset(-50)
+            make.right.equalTo(view).offset(-40)
         }
         
 
@@ -109,11 +120,25 @@ class ViewController: UIViewController {
             self.trackLayer.strokeColor = circle_colors[0]
             self.trackLayer_2.strokeColor = circle_colors[1]
             self.trackLayer_3.strokeColor = circle_colors[2]
+            
+            questionView = question_views[circle_ptr + 1]
+            questionView.view.frame = CGRect(x: 50, y: 200, width: 300, height: 600)
+            questionView.view.layer.cornerRadius = 8
+            self.view.addSubview(questionView.view)
+            questionView.didMove(toParent: self)
+            
+            questionView.view.snp.makeConstraints { (make) -> Void in
+                make.left.equalTo(view).offset(40)
+                make.top.equalTo(view).offset(150)
+                make.bottom.equalTo(view).offset(-110)
+                make.right.equalTo(view).offset(-40)
+            }
             circle_ptr += 1
             print(circle_ptr)
         }
 //        viewDidLoad()
-        self.view.setNeedsDisplay()
+
+//        self.view.setNeedsDisplay()
         print("next Button tapped")
     }
     

@@ -16,7 +16,7 @@ func backButtonView()-> UIButton {
     myButton.frame = CGRect(x: 20, y: 20, width: 100, height: 50)
     // Set text on button
     myButton.setTitle("Back", for: .normal)
-    myButton.backgroundColor = UIColor.blue
+    myButton.backgroundColor = UIColor(red: 61/255, green: 57/255, blue: 1, alpha: 1)
     myButton.layer.shadowColor = UIColor.blue.cgColor
     myButton.layer.shadowOffset = CGSize(width: 2, height: 2.0)
     myButton.layer.masksToBounds = false

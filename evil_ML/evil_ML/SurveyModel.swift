@@ -7,3 +7,8 @@
 //
 
 import Foundation
+struct User {
+   static var name: String="Aman"
+   static var city: String=""
+    static var ethnicity: String=""
+}

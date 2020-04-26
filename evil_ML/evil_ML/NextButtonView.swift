@@ -13,7 +13,7 @@ func nextButtonView()-> UIButton {
     let myButton = UIButton(type: .system)
     
     // Position Button
-    myButton.frame = CGRect(x: 20, y: 20, width: 100, height: 50)
+    myButton.frame = CGRect(x: 20, y: 20, width: 100, height: 100)
     // Set text on button
     myButton.setTitle("Next", for: .normal)
     myButton.backgroundColor = UIColor(red: 61/255, green: 57/255, blue: 1, alpha: 1)
