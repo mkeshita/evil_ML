@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window!.backgroundColor = UIColor.red
         
             // Create a ViewController object and set it as self.window's root view controller.
-            self.window!.rootViewController = ViewController()
+            self.window!.rootViewController = TabBarViewController()
         
             // Make the window be visible.
             self.window!.makeKeyAndVisible()

@@ -96,14 +96,14 @@ class ViewController: UIViewController {
         questionView.view.snp.makeConstraints { (make) -> Void in
             make.left.equalTo(view).offset(40)
             make.top.equalTo(view).offset(150)
-            make.bottom.equalTo(view).offset(-110)
+            make.bottom.equalTo(view).offset(-160)
             make.right.equalTo(view).offset(-40)
         }
         
         nextButton.snp.makeConstraints { (make) -> Void in
             make.left.equalTo(view).offset(200)
-            make.top.equalTo(view).offset(800)
-            make.bottom.equalTo(view).offset(-50)
+            make.top.equalTo(view).offset(750)
+            make.bottom.equalTo(view).offset(-100)
             make.right.equalTo(view).offset(-40)
         }
         
@@ -130,7 +130,7 @@ class ViewController: UIViewController {
             questionView.view.snp.makeConstraints { (make) -> Void in
                 make.left.equalTo(view).offset(40)
                 make.top.equalTo(view).offset(150)
-                make.bottom.equalTo(view).offset(-110)
+                make.bottom.equalTo(view).offset(-160)
                 make.right.equalTo(view).offset(-40)
             }
             circle_ptr += 1

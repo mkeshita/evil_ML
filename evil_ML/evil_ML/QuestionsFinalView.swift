@@ -32,7 +32,7 @@ class QuestionFinalViewController: UIViewController, ConstraintRelatableTarget {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
         let question_label = UILabel(frame: CGRect(x: 10, y: 10, width: 300, height: 300))
-        question_label.text = "Click Next to view your results"
+        question_label.text = "The predicted Vulnerability Score for your region is: 120.0"
         question_label.numberOfLines = 3
         question_label.textAlignment = .center
         question_label.font = UIFont(name: "BanglaSangamMN", size: 30)
