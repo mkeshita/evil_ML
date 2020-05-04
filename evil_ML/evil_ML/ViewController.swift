@@ -149,6 +149,19 @@ class ViewController: UIViewController {
            self.trackLayer.strokeColor = circle_colors[0]
            self.trackLayer_2.strokeColor = circle_colors[1]
            self.trackLayer_3.strokeColor = circle_colors[2]
+            
+            questionView = question_views[circle_ptr]
+            questionView.view.frame = CGRect(x: 50, y: 200, width: 300, height: 600)
+            questionView.view.layer.cornerRadius = 8
+            self.view.addSubview(questionView.view)
+            questionView.didMove(toParent: self)
+            
+            questionView.view.snp.makeConstraints { (make) -> Void in
+                make.left.equalTo(view).offset(40)
+                make.top.equalTo(view).offset(150)
+                make.bottom.equalTo(view).offset(-160)
+                make.right.equalTo(view).offset(-40)
+            }
             print(circle_ptr)
         }
 //        viewDidLoad()

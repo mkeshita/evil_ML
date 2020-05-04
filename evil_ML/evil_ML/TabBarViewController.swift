@@ -14,11 +14,11 @@ class TabBarViewController: UITabBarController {
         super.viewDidLoad()
         let firstViewController = ViewController()
                 
-        firstViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
+        firstViewController.tabBarItem = UITabBarItem(title: "Learn", image: UIImage(), tag: 0)
 
         let secondViewController = MapViewController()
 
-        secondViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 1)
+        secondViewController.tabBarItem = UITabBarItem(title: "Map", image: UIImage(), tag: 1)
 
         let tabBarList = [firstViewController, secondViewController]
 
