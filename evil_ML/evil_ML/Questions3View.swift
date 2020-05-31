@@ -31,23 +31,37 @@ class Question3ViewController: UIViewController, ConstraintRelatableTarget {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
-        let question_label = UILabel(frame: CGRect(x: 10, y: 10, width: 300, height: 300))
-        question_label.text = "3. What is your ethnicity"
+        let question_label = UILabel(frame: CGRect(x: 10, y: 10, width: 50, height: 300))
+        question_label.text = "3. Percentage of persons (25+) with no high school diploma"
         question_label.numberOfLines = 3
         question_label.font = UIFont(name: "BanglaSangamMN", size: 16)
         question_label.textColor = .gray
 
+        let img = UIImage(named: "diploma")
+        let imgview = UIImageView()
+        imgview.contentMode = UIView.ContentMode.scaleAspectFit
+        imgview.frame.size.width = 20
+        imgview.frame.size.height = 20
+        imgview.image = img
             
         self.view.addSubview(question_label)
         self.view.addSubview(addFunds)
+        self.view.addSubview(imgview)
         
         question_label.snp.makeConstraints { (make) -> Void in
             make.left.equalTo(view).offset(20)
+            make.right.equalTo(view).offset(40)
             make.top.equalTo(view).offset(20)
         }
         addFunds.snp.makeConstraints { (make) -> Void in
             make.left.equalTo(view).offset(20)
-            make.top.equalTo(view).offset(60)
+            make.top.equalTo(view).offset(70)
+        }
+        imgview.snp.makeConstraints { (make) -> Void in
+            make.bottom.equalTo(view).offset(-10)
+            make.left.equalTo(view).offset(50)
+            make.right.equalTo(view).offset(-50)
+            
         }
     }
     

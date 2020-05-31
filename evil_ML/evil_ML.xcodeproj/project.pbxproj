@@ -10,6 +10,9 @@
 		38AAF5158C9C4E771346538A /* Pods_evil_ML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCF338ACD185F3AF117078B /* Pods_evil_ML.framework */; };
 		74D794C1F94950E246B0A983 /* Pods_evil_MLTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95335BE7F2F1632E6599C9C6 /* Pods_evil_MLTests.framework */; };
 		7F6989CECBB506E600E811A0 /* Pods_evil_ML_evil_MLUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C353C9BB2F29FCFAC06C6A /* Pods_evil_ML_evil_MLUITests.framework */; };
+		B2305BF62482139200EF4CBA /* Questions4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2305BF52482139200EF4CBA /* Questions4View.swift */; };
+		B2305BF82482140A00EF4CBA /* Questions5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2305BF72482140A00EF4CBA /* Questions5View.swift */; };
+		B2305BFA248214B200EF4CBA /* Questions6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2305BF9248214B200EF4CBA /* Questions6View.swift */; };
 		B25B528D2453DDD0004FF221 /* SurveyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25B528C2453DDD0004FF221 /* SurveyModel.swift */; };
 		B25B528F24552B09004FF221 /* Questions2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25B528E24552B09004FF221 /* Questions2View.swift */; };
 		B25B529124552E04004FF221 /* Questions3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25B529024552E04004FF221 /* Questions3View.swift */; };
@@ -56,6 +59,9 @@
 		8B91CC39A7534EF820A16F72 /* Pods-evil_ML-evil_MLUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-evil_ML-evil_MLUITests.release.xcconfig"; path = "Target Support Files/Pods-evil_ML-evil_MLUITests/Pods-evil_ML-evil_MLUITests.release.xcconfig"; sourceTree = "<group>"; };
 		95335BE7F2F1632E6599C9C6 /* Pods_evil_MLTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_evil_MLTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95BE5068F6FFCA8AE8064EC9 /* Pods-evil_MLTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-evil_MLTests.release.xcconfig"; path = "Target Support Files/Pods-evil_MLTests/Pods-evil_MLTests.release.xcconfig"; sourceTree = "<group>"; };
+		B2305BF52482139200EF4CBA /* Questions4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions4View.swift; sourceTree = "<group>"; };
+		B2305BF72482140A00EF4CBA /* Questions5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions5View.swift; sourceTree = "<group>"; };
+		B2305BF9248214B200EF4CBA /* Questions6View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions6View.swift; sourceTree = "<group>"; };
 		B25B528C2453DDD0004FF221 /* SurveyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyModel.swift; sourceTree = "<group>"; };
 		B25B528E24552B09004FF221 /* Questions2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions2View.swift; sourceTree = "<group>"; };
 		B25B529024552E04004FF221 /* Questions3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions3View.swift; sourceTree = "<group>"; };
@@ -166,9 +172,6 @@
 				B28208AC24456ECC009DDCFA /* NextButtonView.swift */,
 				B28208AE24457090009DDCFA /* BackButtonView.swift */,
 				B28208AA24455497009DDCFA /* QuestionsView.swift */,
-				B26D815B243D5C1000486C51 /* Assets.xcassets */,
-				B26D8160243D5C1000486C51 /* Info.plist */,
-				B26D8158243D5C0E00486C51 /* evil_ML.xcdatamodeld */,
 				B25B528C2453DDD0004FF221 /* SurveyModel.swift */,
 				B25B528E24552B09004FF221 /* Questions2View.swift */,
 				B25B529024552E04004FF221 /* Questions3View.swift */,
@@ -176,6 +179,12 @@
 				B25B5294245550DA004FF221 /* MapView.swift */,
 				B25B5296245556C7004FF221 /* LocationModel.swift */,
 				B25B5298245E6C80004FF221 /* TabBarViewController.swift */,
+				B26D8158243D5C0E00486C51 /* evil_ML.xcdatamodeld */,
+				B26D8160243D5C1000486C51 /* Info.plist */,
+				B26D815B243D5C1000486C51 /* Assets.xcassets */,
+				B2305BF52482139200EF4CBA /* Questions4View.swift */,
+				B2305BF72482140A00EF4CBA /* Questions5View.swift */,
+				B2305BF9248214B200EF4CBA /* Questions6View.swift */,
 			);
 			path = evil_ML;
 			sourceTree = "<group>";
@@ -439,11 +448,14 @@
 				B28208AB24455497009DDCFA /* QuestionsView.swift in Sources */,
 				B26D815A243D5C0E00486C51 /* evil_ML.xcdatamodeld in Sources */,
 				B25B5293245548CF004FF221 /* QuestionsFinalView.swift in Sources */,
+				B2305BF82482140A00EF4CBA /* Questions5View.swift in Sources */,
 				B25B5295245550DA004FF221 /* MapView.swift in Sources */,
 				B28208AD24456ECC009DDCFA /* NextButtonView.swift in Sources */,
 				B25B528D2453DDD0004FF221 /* SurveyModel.swift in Sources */,
 				B25B528F24552B09004FF221 /* Questions2View.swift in Sources */,
 				B26D8154243D5C0E00486C51 /* ViewController.swift in Sources */,
+				B2305BF62482139200EF4CBA /* Questions4View.swift in Sources */,
+				B2305BFA248214B200EF4CBA /* Questions6View.swift in Sources */,
 				B26D8150243D5C0E00486C51 /* AppDelegate.swift in Sources */,
 				B25B529124552E04004FF221 /* Questions3View.swift in Sources */,
 				B26D8152243D5C0E00486C51 /* SceneDelegate.swift in Sources */,

@@ -7,7 +7,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 244/255, green: 245/255, blue: 250/255, alpha: 1)
         let label = UILabel(frame: CGRect(x: 10, y: 10, width: view.frame.size.width-20, height: 300))
-        label.text = "View how your region compares with the top 10 most affected cities during the Coronavirus outbreak"
+        label.text = "View how your region compares with the top 10 most affected cities during the Coronavirus outbreak (cases per 1,000)"
         label.numberOfLines = 3
         label.font = UIFont(name: "BanglaSangamMN", size: 16)
         label.textColor = .gray
@@ -39,7 +39,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
         // Or, if needed, we can position map in the center of the view
         mapView.center = view.center
-        mapView.addAnnotations([loc])
+        mapView.addAnnotations(locations)
         view.addSubview(mapView)
     }
     

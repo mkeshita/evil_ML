@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import SnapKit
 
-class Question2ViewController: UIViewController, ConstraintRelatableTarget {
+class Question4ViewController: UIViewController, ConstraintRelatableTarget {
     var amount = 0.0
     lazy var addFunds: UITextField = {
            let textfield = UITextField()
@@ -18,26 +18,26 @@ class Question2ViewController: UIViewController, ConstraintRelatableTarget {
            textfield.textAlignment = .center
            textfield.borderStyle = .roundedRect
 
-        textfield.addTarget(self, action: #selector(Question2ViewController.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
+        textfield.addTarget(self, action: #selector(Question4ViewController.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
            return textfield
        }()
     
     @objc func textFieldDidChange(_ textField: UITextField) {
         amount = Double(addFunds.text!) ?? 0.0
         print(amount)
-        User.city = addFunds.text!
+        User.ethnicity = addFunds.text!
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
-        let question_label = UILabel(frame: CGRect(x: 10, y: 10, width: 300, height: 300))
-        question_label.text = "2. Average per capita income"
+        let question_label = UILabel(frame: CGRect(x: 10, y: 10, width: 50, height: 300))
+        question_label.text = "4. Percentage of persons aged 65+"
         question_label.numberOfLines = 3
         question_label.font = UIFont(name: "BanglaSangamMN", size: 16)
         question_label.textColor = .gray
 
-        let img = UIImage(named: "house.png")
+        let img = UIImage(named: "senior.png")
         let imgview = UIImageView()
         imgview.contentMode = UIView.ContentMode.scaleAspectFit
         imgview.frame.size.width = 20
@@ -50,11 +50,12 @@ class Question2ViewController: UIViewController, ConstraintRelatableTarget {
         
         question_label.snp.makeConstraints { (make) -> Void in
             make.left.equalTo(view).offset(20)
+            make.right.equalTo(view).offset(40)
             make.top.equalTo(view).offset(20)
         }
         addFunds.snp.makeConstraints { (make) -> Void in
             make.left.equalTo(view).offset(20)
-            make.top.equalTo(view).offset(60)
+            make.top.equalTo(view).offset(70)
         }
         imgview.snp.makeConstraints { (make) -> Void in
             make.bottom.equalTo(view).offset(-10)
