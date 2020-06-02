@@ -50,7 +50,7 @@ class Question3ViewController: UIViewController, ConstraintRelatableTarget {
         
         question_label.snp.makeConstraints { (make) -> Void in
             make.left.equalTo(view).offset(20)
-            make.right.equalTo(view).offset(40)
+            make.right.equalTo(view).offset(-30)
             make.top.equalTo(view).offset(20)
         }
         addFunds.snp.makeConstraints { (make) -> Void in

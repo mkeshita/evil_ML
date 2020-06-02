@@ -32,14 +32,19 @@ class QuestionFinalViewController: UIViewController, ConstraintRelatableTarget {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
         let question_label = UILabel(frame: CGRect(x: 10, y: 10, width: 300, height: 300))
-        question_label.text = "The predicted Vulnerability Score for your region is: 120.0"
+        question_label.text = "The predicted Vulnerability Score for your region is"
         question_label.numberOfLines = 3
         question_label.textAlignment = .center
         question_label.font = UIFont(name: "BanglaSangamMN", size: 30)
         question_label.textColor = .gray
-
+        let ans = UILabel(frame: CGRect(x: 10, y: 10, width: 300, height: 300))
+        ans.text = "10.33"
+        ans.textAlignment = .center
+        ans.font = UIFont(name: "BanglaSangamMN", size: 72)
+        ans.textColor = .gray
             
         self.view.addSubview(question_label)
+        self.view.addSubview(ans)
 //        self.view.addSubview(addFunds)
         
         question_label.snp.makeConstraints { (make) -> Void in
@@ -48,6 +53,10 @@ class QuestionFinalViewController: UIViewController, ConstraintRelatableTarget {
 //            make.left.equalTo(view).offset(20)
 //            make.top.equalTo(view).offset(20)
 //            make.right.equalTo(view).offset(20)
+        }
+        ans.snp.makeConstraints { (make) -> Void in
+            make.edges.equalTo(view)
+            make.bottom.equalTo(view).offset(1)
         }
 //        addFunds.snp.makeConstraints { (make) -> Void in
 //            make.left.equalTo(view).offset(20)

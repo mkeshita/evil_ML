@@ -58,7 +58,7 @@ class Question4ViewController: UIViewController, ConstraintRelatableTarget {
             make.top.equalTo(view).offset(70)
         }
         imgview.snp.makeConstraints { (make) -> Void in
-            make.bottom.equalTo(view).offset(-10)
+            make.bottom.equalTo(view).offset(200)
             make.left.equalTo(view).offset(50)
             make.right.equalTo(view).offset(-50)
             

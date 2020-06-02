@@ -32,11 +32,11 @@ class ViewController: UIViewController {
 //        let progress_bar = progressBarView(circle_colors: circle_colors)
         
         let progress_bar = UIView()
-        let center_1 = CGPoint(x: 100, y: 100)
-        let center_2 = CGPoint(x: 150, y: 100)
-        let center_3 = CGPoint(x: 200, y: 100)
-        let center_4 = CGPoint(x: 210, y: 100)
-        let center_5 = CGPoint(x: 220, y: 100)
+        let center_1 = CGPoint(x: 80, y: 100)
+        let center_2 = CGPoint(x: 110, y: 100)
+        let center_3 = CGPoint(x: 140, y: 100)
+        let center_4 = CGPoint(x: 170, y: 100)
+        let center_5 = CGPoint(x: 200, y: 100)
         let center_6 = CGPoint(x: 230, y: 100)
         let circle_1 = UIBezierPath(arcCenter: center_1, radius: 3, startAngle: -CGFloat.pi / 2, endAngle: 2 * CGFloat.pi, clockwise: true)
         let circle_2 = UIBezierPath(arcCenter: center_2, radius: 3, startAngle: -CGFloat.pi / 2, endAngle: 2 * CGFloat.pi, clockwise: true)
@@ -149,7 +149,7 @@ class ViewController: UIViewController {
             self.trackLayer_3.strokeColor = circle_colors[2]
             self.trackLayer_4.strokeColor = circle_colors[3]
             self.trackLayer_5.strokeColor = circle_colors[4]
-            self.trackLayer_5.strokeColor = circle_colors[5]
+            self.trackLayer_6.strokeColor = circle_colors[5]
             
             questionView = question_views[circle_ptr + 1]
             questionView.view.frame = CGRect(x: 50, y: 200, width: 300, height: 600)
@@ -179,6 +179,9 @@ class ViewController: UIViewController {
            self.trackLayer.strokeColor = circle_colors[0]
            self.trackLayer_2.strokeColor = circle_colors[1]
            self.trackLayer_3.strokeColor = circle_colors[2]
+            self.trackLayer_4.strokeColor = circle_colors[3]
+            self.trackLayer_5.strokeColor = circle_colors[4]
+            self.trackLayer_6.strokeColor = circle_colors[5]
             
             questionView = question_views[circle_ptr]
             questionView.view.frame = CGRect(x: 50, y: 200, width: 300, height: 600)
